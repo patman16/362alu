@@ -9,3 +9,4 @@ greaterThan_test: ; ${IVERILOG} sets.v tests/greaterThan_test.v -o tests/greater
 greaterEqual_test: ; ${IVERILOG} sets.v tests/greaterEqual_test.v -o tests/greaterEqual_test
 lessThan_test: ; ${IVERILOG} sets.v tests/lessThan_test.v -o tests/lessThan_test
 lessEqual_test: ; ${IVERILOG} sets.v tests/lessEqual_test.v -o tests/lessEqual_test
+alu_test: ; ${IVERILOG} 2to1_mux_n.v fulladder.v add_sub.v mult.v sets.v sll.v srl.v sra.v alu.v tests/alu_test.v -o tests/alu_test

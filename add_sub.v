@@ -1,10 +1,3 @@
-   output sum, cout;
-
-   assign sum = a ^ b ^ cin;
-   assign cout = (a&b)^(cin&(a^b));
-endmodule
-
-
 module adder_32(a, b, cin, sum, cout);
    parameter N = 32;
    input cin;
@@ -19,7 +12,7 @@ module adder_32(a, b, cin, sum, cout);
    genvar i;
    for (i = 0; i < N; i = i+1)
        begin : uF
-       fa FULL_ADDER (a[i], b[i], carry[i], sum[i], carry[i+1]);
+       fulladder FULL_ADDER (a[i], b[i], carry[i], sum[i], carry[i+1]);
    end
    endgenerate
 
